@@ -48,7 +48,7 @@ public class RecyclerViewProduits extends AppCompatActivity {
 
         //Get info from String arrays created in String.xml
         nomProd = getResources().getStringArray(R.array.creation_name);
-        dscProd = getResources().getStringArray(R.array.description);
+        dscProd = getResources().getStringArray(R.array.nomArtiste);
 
         MyAdapter adapterProduit = new MyAdapter(this,nomProd,dscProd,images);
         GridLayoutManager gridLayoutManagerProduit = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL, false);

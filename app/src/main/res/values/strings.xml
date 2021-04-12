@@ -4,6 +4,20 @@
     <string name="nom_produit">Nom du produit</string>
     <string name="prix_article">Prix €</string>
 
+    <!--PROFILE PAGE-->
+    <string name="btn_parameters">Paramètres</string>
+    <string name="btn_histo">Mes achats et ventes</string>
+    <string name="btn_add_product"> Ajouter une création</string>
+    <string name="btn_bundle">Envie de plus de visibilité</string>
+    <string name="btn_a_propos">A Propos</string>
+    <string name="btn_aide">Aide</string>
+
+
+
+
+
+
+
     <string-array name="creation_name">
         <item>Template vide</item>
         <item>Naruto</item>
@@ -14,7 +28,7 @@
         <item>Air Force 1 Hokusai vague</item>
     </string-array>
 
-    <string-array name="description">
+    <string-array name="nomArtiste">
         <item>SneakyGirl</item>
         <item>SneakyGirl</item>
         <item>SneakyGirl</item>
