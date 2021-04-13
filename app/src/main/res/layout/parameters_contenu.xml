@@ -4,6 +4,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/container_parameter_contenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -269,6 +270,7 @@
             android:layout_marginLeft="@dimen/margin_general"
             android:layout_marginBottom="@dimen/margin_blank"
             android:hint="@string/modifier" />
+
 
 
     </RelativeLayout>

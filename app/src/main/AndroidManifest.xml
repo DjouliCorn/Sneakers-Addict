@@ -29,6 +29,10 @@
             android:theme="@style/Theme.Sneaker_addict.NoActionBar">
 
         </activity>
+        <activity android:name=".ActivityParametersMain"
+            android:theme="@style/Theme.Sneaker_addict.NoActionBar">
+
+        </activity>
 
     </application>
 
