@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="width_btn_profil">300dp</dimen>
+    <dimen name="width_header_name_page">10dp</dimen>
+    <dimen name="margin_general">10dp</dimen>
+    <dimen name="margin_blank">100dp</dimen>
+
 </resources>

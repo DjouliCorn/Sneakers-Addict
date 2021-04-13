@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),RecyclerViewProduits.class));
                         overridePendingTransition(0, 0);
                         return true;
+
+                    case R.id.menu_profil:
+                        startActivity(new Intent(getApplicationContext(),ActivityProfilMain.class));
+                        overridePendingTransition(0, 0);
+                        return true;
+
                 }
                 return false;
             }

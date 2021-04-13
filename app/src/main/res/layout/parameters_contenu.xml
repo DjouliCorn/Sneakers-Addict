@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header name page -->
+        <LinearLayout
+            android:id="@+id/layout_header_param"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/width_header_name_page"
+            android:orientation="horizontal"
+            android:padding="@dimen/width_header_name_page">
+
+            <ImageView
+                android:id="@+id/img_retour_para"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fleche_retour_orange" />
+
+            <TextView
+                style="@style/titre_accueil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/titre_page_param" />
+        </LinearLayout>
+
+        <!-- AVATAR -->
+        <!-- Changer la flêche en fleche ios (recup celle de julie) -->
+        <ImageView
+            android:id="@+id/avatar_artiste_pg_param"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/layout_header_param"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/width_header_name_page"
+            android:src="@drawable/avatar_artiste" />
+
+        <Button
+            android:id="@+id/btn_modif_param"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar_artiste_pg_param"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:text="@string/modifier" />
+
+        <!-- INFO GENERAL -->
+
+        <TextView
+            android:id="@+id/titre_infogeneral_param"
+            style="@style/titre_intermediaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_modif_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Infos Générales" />
+        <!-- nom -->
+        <TextView
+            android:id="@+id/txt_nom_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titre_infogeneral_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Nom" />
+
+        <EditText
+            android:id="@+id/edit_nom"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_nom_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- prenom -->
+        <TextView
+            android:id="@+id/txt_prenom_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_nom"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Prenom" />
+
+        <EditText
+            android:id="@+id/edit_prenom"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_prenom_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- pseudo -->
+        <TextView
+            android:id="@+id/txt_pseudo_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_prenom"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Pseudo" />
+
+        <EditText
+            android:id="@+id/edit_pseudo"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_pseudo_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- mail -->
+        <TextView
+            android:id="@+id/txt_mail_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_pseudo"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Mail" />
+
+        <EditText
+            android:id="@+id/edit_mail"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_mail_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- password -->
+        <TextView
+            android:id="@+id/txt_password_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_mail"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Password" />
+
+        <EditText
+            android:id="@+id/edit_password"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_password_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- ADRESSE -->
+        <TextView
+            android:id="@+id/titre_adresse_param"
+            style="@style/titre_intermediaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_password"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Adresse" />
+
+        <!-- numéro -->
+        <TextView
+            android:id="@+id/txt_numero_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titre_adresse_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Numéro" />
+
+        <EditText
+            android:id="@+id/edit_numero"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_numero_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- rue -->
+        <TextView
+            android:id="@+id/txt_rue_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_numero"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Rue" />
+
+        <EditText
+            android:id="@+id/edit_rue"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_rue_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- code postal -->
+        <TextView
+            android:id="@+id/txt_cp_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_rue"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Code Postal" />
+
+        <EditText
+            android:id="@+id/edit_cp"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_cp_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- ville -->
+        <TextView
+            android:id="@+id/txt_ville_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_cp"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Ville" />
+
+        <EditText
+            android:id="@+id/edit_ville"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_ville_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_general"
+            android:hint="@string/modifier" />
+
+        <!-- complement -->
+        <TextView
+            android:id="@+id/txt_complement_param"
+            style="@style/prix_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_ville"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:text="Complément" />
+
+        <EditText
+            android:id="@+id/edit_complement"
+            style="@style/nom_artiste_accueil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_complement_param"
+            android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginBottom="@dimen/margin_blank"
+            android:hint="@string/modifier" />
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

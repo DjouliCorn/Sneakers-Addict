@@ -15,6 +15,17 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!--Buttons styles -->
+
+    <style name="btn_profil_transparent">
+        <item name="backgroundTint">@color/transparent</item>
+        <item name="fontFamily">@font/mulish_regular</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
     <style name="button_orange" parent="Theme.Sneaker_addict">
         <item name="backgroundTint">@color/orange</item>
     </style>
@@ -64,6 +75,14 @@
         <item name="android:layout_width">30dp</item>
         <item name="android:layout_height">30dp</item>
         <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="titre_intermediaire" parent="prix_accueil">
+        <item name="android:textColor">@color/orange</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+
     </style>
 
 

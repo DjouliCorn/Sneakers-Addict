@@ -14,5 +14,6 @@
     <color name= "blackDeep">#292F34</color>
     <color name="grey">#394755</color>
     <color name="orange_app">#FD8E10</color>
+    <color name="transparent">#00FFFFFF</color>
 
 </resources>

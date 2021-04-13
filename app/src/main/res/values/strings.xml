@@ -12,11 +12,9 @@
     <string name="btn_a_propos">A Propos</string>
     <string name="btn_aide">Aide</string>
 
-
-
-
-
-
+    <!--Parameters section-->
+    <string name="titre_page_param">Paramètres</string>
+    <string name="modifier">Modifier</string>
 
     <string-array name="creation_name">
         <item>Template vide</item>
