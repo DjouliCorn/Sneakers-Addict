@@ -15,8 +15,8 @@ public class RecyclerViewProduits extends AppCompatActivity {
 
     RecyclerView recyclerItem;
     String nomProd[], dscProd[];
-    int images[]={R.drawable.air_force_1,R.drawable.naruto_akatsuki_converse,R.drawable.monopoly_stansmith,
-            R.drawable.pizza_vans,R.drawable.ananas,R.drawable.red_dragon_1,R.drawable.hokusai_force1};
+    int images[] = {R.drawable.air_force_1, R.drawable.naruto_akatsuki_converse, R.drawable.monopoly_stansmith,
+            R.drawable.pizza_vans, R.drawable.ananas, R.drawable.red_dragon_1, R.drawable.hokusai_force1};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +29,10 @@ public class RecyclerViewProduits extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
 
-                    case R.id.menu_homepage :
-                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                    case R.id.menu_homepage:
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         overridePendingTransition(0, 0);
                         return true;
 
@@ -40,7 +40,7 @@ public class RecyclerViewProduits extends AppCompatActivity {
                         return true;
 
                     case R.id.menu_profil:
-                        startActivity(new Intent(getApplicationContext(),ActivityProfilMain.class));
+                        startActivity(new Intent(getApplicationContext(), ActivityProfilMain.class));
                         overridePendingTransition(0, 0);
                         return true;
 
@@ -56,11 +56,10 @@ public class RecyclerViewProduits extends AppCompatActivity {
         nomProd = getResources().getStringArray(R.array.creation_name);
         dscProd = getResources().getStringArray(R.array.nomArtiste);
 
-        MyAdapter adapterProduit = new MyAdapter(this,nomProd,dscProd,images);
-        GridLayoutManager gridLayoutManagerProduit = new GridLayoutManager(this,2,GridLayoutManager.VERTICAL, false);
+        MyAdapter adapterProduit = new MyAdapter(this, nomProd, dscProd, images);
+        GridLayoutManager gridLayoutManagerProduit = new GridLayoutManager(this, 2, GridLayoutManager.VERTICAL, false);
         recyclerItem.setLayoutManager(gridLayoutManagerProduit);
         recyclerItem.setAdapter(adapterProduit);
-
 
 
     }

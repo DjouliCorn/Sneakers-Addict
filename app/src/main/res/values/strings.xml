@@ -14,6 +14,7 @@
 
     <!--Parameters section-->
     <string name="titre_page_param">Paramètres</string>
+    <string name="titre_page_addprod">Ajouter une création</string>
     <string name="modifier">Modifier</string>
 
     <string-array name="creation_name">

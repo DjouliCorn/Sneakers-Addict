@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/contenu_add_prod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Header name page -->
+        <LinearLayout
+            android:id="@+id/layout_header_param"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/width_header_name_page"
+            android:orientation="horizontal"
+            android:padding="@dimen/width_header_name_page">
+
+            <ImageView
+                android:id="@+id/img_retour_para"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fleche_retour_orange" />
+
+            <TextView
+                style="@style/titre_accueil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/titre_page_addprod" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
