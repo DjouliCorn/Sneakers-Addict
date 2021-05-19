@@ -54,6 +54,7 @@
                 android:layout_gravity="center"
                 android:scaleType="fitCenter"
                 android:layout_marginStart="10dp"
+                android:visibility="gone"
                 android:src="@drawable/ic_baseline_favorite_border_24_orange"/>
 
         </LinearLayout>

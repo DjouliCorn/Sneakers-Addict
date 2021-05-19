@@ -9,27 +9,32 @@
         android:layout_height="wrap_content">
 
         <!-- Header name page -->
-        <LinearLayout
-            android:id="@+id/layout_header_param"
+        <RelativeLayout
+            android:id="@+id/layout_header_param2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/width_header_name_page"
-            android:orientation="horizontal"
-            android:padding="@dimen/width_header_name_page">
+            android:layout_marginTop="15dp">
 
-            <ImageView
-                android:id="@+id/img_retour_para"
+            <ImageButton
+                android:id="@+id/arrow_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/fleche_retour_orange" />
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:background="@color/white"
+                android:onClick="back"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24" />
 
             <TextView
-                style="@style/titre_accueil"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/titre_page_param" />
-        </LinearLayout>
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/mulish_bold"
+                android:text="Paramètres"
+                android:textColor="@color/grey"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
 
         <!-- AVATAR -->
         <!-- Changer la flêche en fleche ios (recup celle de julie) -->
@@ -37,20 +42,22 @@
             android:id="@+id/avatar_artiste_pg_param"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_below="@+id/layout_header_param"
+            android:layout_below="@+id/layout_header_param2"
             android:layout_centerHorizontal="true"
             android:padding="@dimen/width_header_name_page"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/ic_baseline_person_outline_24" />
 
-        <Button
+        <!--<Button
             android:id="@+id/btn_modif_param"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/avatar_artiste_pg_param"
             android:layout_centerInParent="true"
             android:layout_marginBottom="@dimen/margin_general"
-            android:visibility="gone"
-            android:text="@string/modifier" />
+            android:text="@string/modifier"
+            android:visibility="gone" />-->
 
         <!-- INFO GENERAL -->
 
@@ -59,8 +66,9 @@
             style="@style/titre_intermediaire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/btn_modif_param"
+            android:layout_below="@+id/avatar_artiste_pg_param"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Infos Générales" />
         <!-- nom -->
         <TextView
@@ -70,6 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/titre_infogeneral_param"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Nom" />
 
         <EditText
@@ -79,6 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_nom_param"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="@dimen/margin_general"
             android:hint="@string/modifier" />
 
@@ -90,6 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edit_nom"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Prenom" />
 
         <EditText
@@ -110,6 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edit_prenom"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Pseudo" />
 
         <EditText
@@ -119,6 +131,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/txt_pseudo_param"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:layout_marginBottom="@dimen/margin_general"
             android:hint="@string/modifier" />
 
@@ -130,6 +143,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edit_pseudo"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Mail" />
 
         <EditText
@@ -140,6 +154,7 @@
             android:layout_below="@+id/txt_mail_param"
             android:layout_marginLeft="@dimen/margin_general"
             android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:hint="@string/modifier" />
 
         <!-- password -->
@@ -150,6 +165,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edit_mail"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Password"
             android:visibility="gone" />
 
@@ -161,8 +177,9 @@
             android:layout_below="@+id/txt_password_param"
             android:layout_marginLeft="@dimen/margin_general"
             android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:hint="@string/modifier"
-            android:visibility="gone"/>
+            android:visibility="gone" />
 
         <!-- ADRESSE -->
         <TextView
@@ -172,6 +189,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/edit_password"
             android:layout_marginLeft="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:text="Adresse" />
 
         <!-- adresse -->
@@ -184,9 +202,8 @@
             android:layout_below="@+id/titre_adresse_param"
             android:layout_marginLeft="@dimen/margin_general"
             android:layout_marginBottom="@dimen/margin_general"
+            android:layout_marginRight="20dp"
             android:hint="@string/modifier" />
-
-
 
     </RelativeLayout>
 

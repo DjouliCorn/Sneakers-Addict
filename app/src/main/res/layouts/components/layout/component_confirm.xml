@@ -265,6 +265,7 @@
         android:layout_below="@+id/détails_commande"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
+        android:onClick="onClickAlertDialog"
         android:background="@drawable/background_button"
         android:text="payer" />
 

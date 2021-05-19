@@ -1,7 +1,11 @@
 package com.lea.sneaker_addict.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Parcelable;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,8 +50,8 @@ public class AdressActivity extends AppCompatActivity {
         if (!SharedPrefManager.getInstance(this).isLoggedIn()) {
             finish();
             startActivity(new Intent(this, LoginUserActivity.class));
-
         }
+
 
         rAdressGroup = (RadioGroup) findViewById(R.id.radiogroup);
         button = (Button) findViewById(R.id.button_changer_adresse);
@@ -55,16 +59,22 @@ public class AdressActivity extends AppCompatActivity {
 
         bddAdresse.setText(SharedPrefManager.getInstance(this).getAdresse());
 
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 int selectedId = rAdressGroup.getCheckedRadioButtonId();
                 rButton = (RadioButton) findViewById(selectedId);
+
                 if (rButton.getText().toString().equals("Adresse actuelle")) {
-                    str = "2 Petre Melikishvili St.0162, Tsibili";
+
+                    SharedPreferences sharedPrefM = getSharedPreferences("mysharedpref12", MODE_PRIVATE);
+                    str = sharedPrefM.getString("adresseUser", "");
                     Intent intent = new Intent(AdressActivity.this, ConfirmActivity.class);
                     intent.putExtra("address_change", str);
                     startActivity(intent);
+
                 }
                 if (rButton.getText().toString().equals("Nouvelle adresse")) {
                     Intent intent = new Intent(AdressActivity.this, ConfirmActivity.class);

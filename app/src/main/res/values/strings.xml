@@ -68,7 +68,7 @@
     <string name="btn_bundle">Envie de plus de visibilité</string>
     <string name="btn_a_propos">A Propos</string>
     <string name="btn_aide">Aide</string>
-    <string name="btn_deco">Deconnexion</string>
+    <string name="btn_deco">Déconnexion</string>
 
     <!--Parameters section-->
     <string name="titre_page_param">Paramètres</string>
@@ -81,8 +81,8 @@
     
 
     <string name="adresse_livraison">
-        2 Petre Melikishvili St.
-        0162, Tsibili
+        55 rue Pierre De Coubertin,
+        31400 TOULOUSE
     </string>
 
     <!--BOTTOM NAVIGATON VIEW-->

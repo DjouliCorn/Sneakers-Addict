@@ -36,10 +36,10 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
 
         buttonDeco = (Button) findViewById(R.id.btn_deco);
         buttonParams = (Button) findViewById(R.id.btn_param);
-        buttonAddCrea = (Button) findViewById(R.id.btn_add_crea);
+        //buttonAddCrea = (Button) findViewById(R.id.btn_add_crea);
 
         buttonParams.setOnClickListener(this);
-        buttonAddCrea.setOnClickListener(this);
+        //buttonAddCrea.setOnClickListener(this);
         buttonDeco.setOnClickListener(this);
 
         //****BOTTOM NAV*****//
@@ -79,10 +79,10 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
             Log.i("test", "parameters");
             startActivity(new Intent(this, ParametersActivity.class));
         }
-        if (view == buttonAddCrea) {
+        /*if (view == buttonAddCrea) {
             Log.i("test", "addcrea");
             startActivity(new Intent(this, AddProductActivity.class));
-        }
+        }*/
         if (view == buttonDeco) {
             SharedPrefManager.getInstance(this).logout();
 
